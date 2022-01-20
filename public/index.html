@@ -1,13 +1,43 @@
 <!DOCTYPE html>
-    <head>
-        <title>MaxALEau</title>
-        <meta charset="utf-8">
-    </head>
-    <body>
-        <center>
-            <h1>Bienvenue sur le site de MaxALEau !</h1>
-            <h2>Site en construction !</h2>
-            <h3>ça avance... (10/01/2022)</h3>
-            <img src="https://cdn.lacuisinedannie.com/images/45.jpg">
-        </center>
-    </body>
+<head>
+    <title>MaxALEau</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <center>
+        <h1>Bienvenue sur le site de MaxALEau !</h1>
+        <h2>Tape ton nom</h2>
+        <input id="firstName" type="text" placeholder="Ton Prénom"></input>
+        <input id="lastName" type="text" placeholder="Ton Nom"></input>
+        <h4>OU</h4>
+        <input id="Pseudo" type="text" placeholder="Ton Pseudo"></input>
+        <br><br>
+        <button id="validate">Valider</button>
+        <br><br><br>
+        <span id="result"></span>
+    </center>
+
+<!--SCRIPTS!-->
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.3/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyCXPLN_KgWFJaO_z2YlXDEamVTeaHNKuKY",
+          authDomain: "maxaleautk.firebaseapp.com",
+          databaseURL: "https://maxaleautk-default-rtdb.europe-west1.firebasedatabase.app",
+          projectId: "maxaleautk",
+          storageBucket: "maxaleautk.appspot.com",
+          messagingSenderId: "178514592898",
+          appId: "1:178514592898:web:41a270203302a270de209b"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+    </script>
+    <script src="main.js"></script>
+</body>

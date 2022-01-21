@@ -19,26 +19,22 @@
 
 <!--SCRIPTS!-->
 
-    <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.3/firebase-app.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-      
-        // Your web app's Firebase configuration
-        const firebaseConfig = {
-          apiKey: "AIzaSyCXPLN_KgWFJaO_z2YlXDEamVTeaHNKuKY",
-          authDomain: "maxaleautk.firebaseapp.com",
-          databaseURL: "https://maxaleautk-default-rtdb.europe-west1.firebasedatabase.app",
-          projectId: "maxaleautk",
-          storageBucket: "maxaleautk.appspot.com",
-          messagingSenderId: "178514592898",
-          appId: "1:178514592898:web:41a270203302a270de209b"
+    <script>
+        // Set the configuration for your app
+        // TODO: Replace with your project's config object
+        var config = {
+        apiKey: "AIzaSyCXPLN_KgWFJaO_z2YlXDEamVTeaHNKuKY",
+        authDomain: "maxaleautk.firebaseapp.com",
+        // For databases not in the us-central1 location, databaseURL will be of the
+        // form https://[databaseName].[region].firebasedatabase.app.
+        // For example, https://your-database-123.europe-west1.firebasedatabase.app
+        databaseURL: "https://databaseName.firebaseio.com",
+        storageBucket: "maxaleautk.appspot.com"
         };
-      
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
+        firebase.initializeApp(config);
+        
+        // Get a reference to the database service
+        var database = firebase.database();
     </script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
     <script src="main.js"></script>
 </body>
